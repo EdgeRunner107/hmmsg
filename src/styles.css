@@ -99,12 +99,15 @@ input {
 /* ==============================
    통합 메시지 페이지
 ============================== */
+/* ==============================
+   통합 메시지 페이지
+============================== */
 
 .display-page {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: transparent;
+  background: #000000; /* 검은색 배경 */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,7 +119,7 @@ input {
   flex-direction: column;
   gap: 30px;
   text-align: center;
-  color: #000000;
+  color: #ffffff; /* 흰색 글자 */
   font-weight: 900;
   line-height: 1.25;
 }
@@ -136,8 +139,8 @@ input {
   top: 10px;
   right: 10px;
   padding: 6px 10px;
-  background: rgba(0, 0, 0, 0.65);
-  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
   border-radius: 8px;
   font-size: 12px;
 }
@@ -151,8 +154,8 @@ input {
   align-items: center;
   gap: 12px;
   padding: 10px 16px;
-  background: rgba(0, 0, 0, 0.75);
-  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
   border-radius: 12px;
   font-size: 14px;
 }

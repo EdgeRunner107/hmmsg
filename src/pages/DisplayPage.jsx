@@ -135,22 +135,7 @@ export default function DisplayPage() {
         </div>
       </section>
 
-      <div className="display-controls">
-        <span>글자 크기</span>
 
-        <input
-          type="range"
-          min="10"
-          max="200"
-          step="1"
-          value={fontSize}
-          onChange={handleFontSize}
-        />
-
-        <strong>
-          {fontSize}px
-        </strong>
-      </div>
     </main>
   );
 }
