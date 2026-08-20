@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, "Noto Sans KR", sans-serif;
+}
+
+button,
+textarea,
+input {
+  font: inherit;
+}
+
+/* ==============================
+   메시지 입력 페이지
+============================== */
+
+.sender-page {
+  min-height: 100vh;
+  padding: 24px;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sender-card {
+  width: min(680px, 100%);
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.sender-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #111827;
+  color: white;
+  font-weight: 800;
+}
+
+.sender-card h1 {
+  margin: 18px 0;
+  font-size: 30px;
+}
+
+.sender-card textarea {
+  width: 100%;
+  min-height: 220px;
+  padding: 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  resize: vertical;
+  outline: none;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.sender-card textarea:focus {
+  border-color: #111827;
+}
+
+.sender-card button {
+  width: 100%;
+  min-height: 58px;
+  margin-top: 14px;
+  border: 0;
+  border-radius: 14px;
+  background: #111827;
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.sender-card button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.send-status {
+  min-height: 24px;
+  margin-top: 12px;
+  text-align: center;
+  color: #4b5563;
+}
+
+/* ==============================
+   통합 메시지 페이지
+============================== */
+
+.display-page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-messages {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  color: #000000;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.display-row {
+  width: 100%;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.display-label {
+  margin-right: 12px;
+}
+
+.display-status {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.display-controls {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.display-controls input {
+  width: 260px;
+}
+
+.display-controls strong {
+  min-width: 55px;
+  text-align: right;
+}
+
+/* ==============================
+   404
+============================== */
+
+.not-found {
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ==============================
+   모바일
+============================== */
+
+@media (max-width: 600px) {
+  .sender-page {
+    padding: 14px;
+  }
+
+  .sender-card {
+    padding: 20px;
+  }
+
+  .display-controls {
+    width: calc(100% - 24px);
+    justify-content: center;
+  }
+
+  .display-controls input {
+    width: 45vw;
+  }
+}
