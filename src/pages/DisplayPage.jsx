@@ -116,7 +116,7 @@ export default function DisplayPage() {
       >
         <div className="display-row">
           <span className="display-label">
-            혁민 메시지 :
+            혁민 :
           </span>
 
           <span>
@@ -126,7 +126,7 @@ export default function DisplayPage() {
 
         <div className="display-row">
           <span className="display-label">
-            이로이 메시지 :
+            이로이 :
           </span>
 
           <span>
