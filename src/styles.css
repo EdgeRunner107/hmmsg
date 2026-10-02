@@ -2,6 +2,23 @@
   box-sizing: border-box;
 }
 
+/* Two smooth pulses without changing the message panel's dimensions. */
+.display-messages.new-message-flash {
+  animation: new-message-flash 400ms ease-in-out 2;
+}
+
+@keyframes new-message-flash {
+  0%, 100% {
+    background-color: transparent;
+    box-shadow: 0 0 0 0 transparent, inset 0 0 0 2px transparent;
+  }
+  50% {
+    background-color: rgba(239, 68, 68, 0.18);
+    box-shadow: 0 0 24px 4px rgba(239, 68, 68, 0.65),
+      inset 0 0 0 2px #ef4444;
+  }
+}
+
 html,
 body,
 #root {
