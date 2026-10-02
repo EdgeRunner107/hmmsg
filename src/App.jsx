@@ -14,7 +14,7 @@ export default function App() {
   }
 
   if (path === "/iroi") {
-    return <SenderPage sender="이로이" title="이로이 메시지 입력" />;
+    return <SenderPage sender="이로이" label="이사님" title="이사님 메시지 입력" />;
   }
 
   if (path === "/display" || path === "/") {

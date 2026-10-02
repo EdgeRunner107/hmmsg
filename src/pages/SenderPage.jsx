@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { supabase } from "../supabase.js";
 
-export default function SenderPage({ sender, title }) {
+export default function SenderPage({ sender, title, label = sender }) {
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
   const [sending, setSending] = useState(false);
@@ -50,7 +50,7 @@ export default function SenderPage({ sender, title }) {
   return (
     <main className="sender-page">
       <section className="sender-card">
-        <div className="sender-badge">{sender}</div>
+        <div className="sender-badge">{label}</div>
 
         <h1>{title}</h1>
 
